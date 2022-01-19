@@ -12,10 +12,8 @@ cd /data/postgres/<BR>
 docker run --rm  -v /data/postgres:/var/lib/postgresql sqldbapg/pg-upgrade:10-to-14 --link
 
 Your installation contains extensions that should be updated<BR>
-with the ALTER EXTENSION command.  The file<BR>
-    update_extensions.sql<BR>
-when executed by psql by the database superuser will update<BR>
-these extensions.
+with the ALTER EXTENSION command.  The file <B>update_extensions.sql</B><BR>
+when executed by psql by the database superuser will update these extensions.<BR>
 
 
 Upgrade Complete<BR>
