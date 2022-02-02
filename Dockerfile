@@ -22,6 +22,7 @@ RUN mkdir -p "$PGDATAOLD" "$PGDATANEW" \
 WORKDIR /var/lib/postgresql
 
 COPY docker-upgrade /usr/local/bin/
+RUN chmod 777 /usr/local/bin/docker-upgrade
 
 ENTRYPOINT ["docker-upgrade"]
 
